@@ -1,1 +1,0 @@
-<div id="cabecera" class="col-xs-12">cabecera!!</div>
