@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>
+	<definition name="template" template="/views/templates/template.jsp">
+		<put-attribute name="titulo" value="test.titulo.home" />
+		<put-attribute name="cabecera" value="/views/templates/parts/cabecera.jsp" />
+		<put-attribute name="menu" value="/views/templates/parts/nav.jsp" />
+		<put-attribute name="contenido" value="" />
+		<put-attribute name="pie" value="/views/templates/parts/pie.jsp" />
+	</definition>
+	<definition name="templateTab" template="/views/templates/templateTab.jsp">
+		<put-attribute name="contenido" value="" />
+	</definition>
+	<definition name="home" extends="template">
+		<put-attribute name="contenido" value="/views/pages/home.jsp" />
+	</definition>
+	<definition name="tabsMain" extends="template">
+		<put-attribute name="contenido" value="/views/pages/tabs/tabsMain.jsp" />
+	</definition>
+	<definition name="tab" extends="templateTab">
+		<put-attribute name="contenido" value="/views/pages/tabs/tab.jsp" />
+	</definition>
+	<definition name="signup" extends="template">
+		<put-attribute name="contenido" value="/views/pages/signup.jsp" />
+		<put-list-attribute name="javascripts">
+			<add-attribute value="signup/signup.js	" />
+	   	</put-list-attribute>
+	</definition>
+</tiles-definitions>

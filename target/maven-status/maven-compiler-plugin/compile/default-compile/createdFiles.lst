@@ -1,0 +1,11 @@
+test\service\impl\SignUpServiceImpl.class
+test\model\entity\Usuario.class
+test\model\to\SignUpTO.class
+test\rest\impl\SignUpRestImpl.class
+test\controller\HomeController.class
+test\repository\UsuarioRepository.class
+test\controller\SignUpController.class
+test\config\AppConfig.class
+test\controller\TabsController.class
+test\rest\SignUpRest.class
+test\service\SignUpService.class
